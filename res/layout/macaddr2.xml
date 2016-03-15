@@ -1,0 +1,36 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="4.0"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@id/tv_addr_Name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5.0sp"
+            android:gravity="right"
+            android:text="SlaveA"
+            android:textColor="#000000" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+        <!-- android:src="@drawable/dotted" -->
+
+        <TextView
+            android:id="@id/tv_addr_ID"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5.0sp"
+            android:gravity="right"
+            android:text="00:00:00:00:00:00"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+</LinearLayout>

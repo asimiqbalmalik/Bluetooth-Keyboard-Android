@@ -1,0 +1,237 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#444"
+    android:padding="10dp" >
+
+    <RelativeLayout
+        android:id="@+id/rlBleData"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp" >
+
+        <EditText
+            android:id="@+id/txtBleData"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:hint="Bluetooth Data"
+            android:textColor="#ffffff"
+            android:textSize="14.0sp" />
+
+        <ImageView
+            android:id="@+id/imageviewBluetooth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="5dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlJoystickKeys"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/rlBleData" >
+
+        <TableLayout
+            android:id="@+id/TableLayout01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TableRow
+                android:id="@+id/TableRow01"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0px"
+                android:layout_weight="1.0" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1.0dip"
+                    android:layout_weight="1.0"
+                    android:textColor="#ffedff99"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btnUp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1.0dip"
+                    android:layout_weight="1.0"
+                    android:background="@+drawable/gradient"
+                    android:padding="3.0dip"
+                    android:text="U"
+                    android:textColor="#ffedff99"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1.0dip"
+                    android:layout_weight="1.0"
+                    android:textColor="#ffedff99"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="0.0px"
+                android:layout_weight="1.0" >
+
+                <Button
+                    android:id="@+id/btnLeft"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1.0dip"
+                    android:layout_weight="1.0"
+                    android:background="@+drawable/gradient"
+                    android:padding="3.0dip"
+                    android:text="L"
+                    android:textColor="#ffedff99"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1.0dip"
+                    android:layout_weight="1.0"
+                    android:textColor="#ffedff99"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btnRight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1.0dip"
+                    android:layout_weight="1.0"
+                    android:background="@+drawable/gradient"
+                    android:padding="3.0dip"
+                    android:text="R"
+                    android:textColor="#ffedff99"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="0.0px"
+                android:layout_weight="1.0" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1.0dip"
+                    android:layout_weight="1.0"
+                    android:textColor="#ffedff99"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btnDown"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1.0dip"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/gradient"
+                    android:padding="3.0dip"
+                    android:text="D"
+                    android:textColor="#ffedff99"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1.0dip"
+                    android:layout_weight="1.0"
+                    android:textColor="#ffedff99"
+                    android:textStyle="bold" />
+            </TableRow>
+        </TableLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlJoystickOK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/rlBleData" >
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="0.0px"
+                android:layout_weight="1.0" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1.0dip"
+                    android:layout_weight="1.0"
+                    android:padding="15.0dip"
+                    android:textColor="#ffedff99"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1.0dip"
+                    android:layout_weight="1.0"
+                    android:padding="15.0dip"
+                    android:textColor="#ffedff99"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="0.0px"
+                android:layout_weight="1.0" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1.0dip"
+                    android:layout_weight="1.0"
+                    android:padding="15.0dip"
+                    android:textColor="#ffedff99"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btnOk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/gradient"
+                    android:padding="3.0dip"
+                    android:text="Ok"
+                    android:textColor="#ffffffff"
+                    android:textSize="16.0sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="0.0px"
+                android:layout_weight="1.0" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1.0dip"
+                    android:layout_weight="1.0"
+                    android:padding="15.0dip"
+                    android:textColor="#ffedff99"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1.0dip"
+                    android:layout_weight="1.0"
+                    android:padding="15.0dip"
+                    android:textColor="#ffedff99"
+                    android:textStyle="bold" />
+            </TableRow>
+        </TableLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

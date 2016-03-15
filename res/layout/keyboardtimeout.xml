@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <!-- center picker @ minutes -->
+
+    <NumberPicker
+        android:id="@+id/npicker_minutes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp" />
+
+    <!-- left picker @ hours -->
+
+    <NumberPicker
+        android:id="@+id/npicker_hours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/npicker_minutes" />
+
+    <!-- right picker @ seconds -->
+
+    <NumberPicker
+        android:id="@+id/npicker_seconds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/npicker_minutes" />
+
+    <TextView
+        android:id="@+id/tv_minutes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/npicker_minutes"
+        android:layout_alignRight="@id/npicker_minutes"
+        android:layout_below="@id/npicker_minutes"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:paddingBottom="15dp"
+        android:text="mm" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/npicker_hours"
+        android:layout_alignRight="@+id/npicker_hours"
+        android:layout_below="@id/npicker_hours"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:paddingBottom="15dp"
+        android:text="hh" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/npicker_seconds"
+        android:layout_alignRight="@id/npicker_seconds"
+        android:layout_below="@id/npicker_seconds"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:paddingBottom="15dp"
+        android:text="ss" />
+
+    <Button
+        android:id="@+id/dialogButtonOK"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:text=" Ok " />
+
+</RelativeLayout>
